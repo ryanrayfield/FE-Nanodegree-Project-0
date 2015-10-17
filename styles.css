@@ -1,0 +1,162 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+/* HEADING */
+
+.header-content {
+  height: 100%;
+}
+
+header {
+  height: 25vw;
+  max-height: 150px;
+  width: 100%;
+}
+
+.udacity-logo {
+  max-height: 100%;
+  width: 50%;
+  float: left;
+}
+
+h1 {
+  float: left;
+  padding-top: 5%;
+  width: 80%;
+  font-weight: normal;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 464px) and (min-width: 381px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 465px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .header-content {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .header-content {
+    padding-top: 5px;
+  }
+}
+
+
+/* MAIN SECTIONS */
+
+.hero {
+  padding: 1em;
+  max-width: 100%;
+  background-color: #d94e10;
+  color: #969696;
+}
+
+
+.iama {
+  max-width: 100%;
+  color: black;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  margin: 0;
+    font-style: italic;
+    font-family: fantasy;
+    
+}
+
+.my-info {
+  max-width: 100%;
+  font-size: 22px;
+  margin: 0 auto 20px;
+    color: #969696;
+    font-family: cursive;
+        animation: slidein 1.2s;
+}
+.my-picture {
+  display: block;
+  margin: 1 auto 10px;
+  max-width: 30%;
+  border: 6px solid black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+animation: grow 2.0s;
+}
+
+
+.my-info:last-of-type {
+  margin: 0;
+}
+
+.my-name {
+  color: #969696;
+}
+
+.about-me {
+  padding: 1em;
+}
+
+/* Animation swiped from http://codepen.io/agelber/  */
+
+@keyframes fadein {
+  from {
+    color: transparent;
+  }
+  to {
+    color: inherit;
+  }
+}
+
+
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+  49.9% {
+    opacity: 0;
+  }
+  50% {
+    left: -240px;
+  }
+  to {
+    left: 0;
+  }
+}
